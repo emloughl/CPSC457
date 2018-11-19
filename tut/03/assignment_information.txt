@@ -1,0 +1,5 @@
+The goal of this assignment is to reduce system calls.
+
+Use a buffer or something to reduce system calls.
+
+

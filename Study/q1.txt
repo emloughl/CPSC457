@@ -1,0 +1,12 @@
+Q) What is the primary purpose of an operating system?
+Q) What are teh two main modes of operation?
+Q) What is Kernel Mode? 
+Q) What is User Mode?
+Q) What are the two primary functions of an operating system?
+Q) What is a computer's architecture?
+Q) What is multiplexing and what are the two types of multiplexing?
+Q) What is time multiplexing?
+Q) What is Space Multiplexing?
+Q) What was the batch system? 
+Q) What is multiprogramming and why was it introduced?
+Q) What is spooling?

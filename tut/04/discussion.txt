@@ -1,0 +1,18 @@
+1. 
+
+Does the Process ID change on each run? 
+
+- Yes, because there are many other processes currently executing on an operating system. They each get ID's, and the ID will be increasing with each process.
+
+
+Does the parent process ID ever change? 
+
+- No. It always remains as 1.
+
+
+2. FORK:
+
+- If the result of fork is negative, it means failed to fork. If it is zero, then this means that the child 
+ created it. If it is above zero, then it was created by the parent.
+
+3. 

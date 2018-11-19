@@ -1,0 +1,12 @@
+A) To provide a better, cleaner, simpler model of the computer and to handle managing all of the hardware (processors, main memory, disks, printers, keyboard, mouse, display, network interfaces, and various other I/O devices.)
+A) User Mode and Kernel Mode (also called supervisor mode)
+A) Kernel mode has complete access to all the hardware and can execute any instruction the machine is capable of executing.
+A) A mode of operating system in which only a subset of the machine instructions are available.
+A) 1) Providing application programmers a clean abstract set of resources instead of the messy hardware ones, and 2) Managing these hardware resources
+A) Instruction set, memory organization, I/O, and bus structure
+A) Multiplexing = sharing resources in two different ways: in time and in space. 
+A) Time multiplexing means that users take turns using a resource (for example, only one CPU and multiple programs, so the Operating System has to constantly allocate the CPU to one program, then the next, then the next).
+A) Space multiplexing means that instead of customers taking turns, each one gets part of the resource. For example, main memory is normally divided up among several running programs. If there is enough space in memory, it is more efficient to hold several programs in memory.
+A) Creating a batch of jobs using one cheap computer, and then batching all these jobs together for processing.
+A) A key technique first popularized by IBM's OS/360. Programmers found that the CPU had to frequently sit idle, waiting for a new tape or I/O operation to finish. Multiprogramming was a solution to this, which was to partition memory into several pieces, with a different job in each partition. This allowed the CPU to be kept busy nearly 100% of the time.
+A) Simultaneous Peripheral Operation On Line - a technique introduced in third generation operating systems - the ability to read jobs from cards onto the disk as soon as they were brought to the computer room. Then, whenever a running job finished, the operating system could load a new job from the disk into the now-empty partition and run it. 

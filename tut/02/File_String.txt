@@ -1,0 +1,123 @@
+// Create a phonebook
+
+#include <iostream>
+#include <fstream>
+#include <cstdio>
+using namespace std;
+
+int main()
+{
+   fstream phonefile("Contact.txt", ios::out);
+   string number, name;
+
+   cout<<"Enter contact's info (0 for quit):"<<endl;
+   for(;;)
+   {
+      cout<<"\nNumber:";
+      cin>>number;
+      if(number=="0")
+         break;
+
+      cout<<"Name:";
+      cin>>name;
+      phonefile<<number<<" "<<name<<" "<<endl;
+   }
+   cout<<"All contacts stored in Contact.txt"<<endl;
+   return(0);
+}
+
+=======================================================
+// Search a name
+#include <iostream>
+#include <fstream>
+#include <cstdio>
+using namespace std;
+
+int main()
+{
+   fstream phonefile("Contact.txt", ios::in);
+   string number, name, searchname;
+   bool isfound = false;
+
+   cout<<"Enter contact's number for search:"<<endl;
+   cin>>searchname;
+
+   while(phonefile>>number)   
+   {
+      phonefile>>name;
+      if(searchname==name)
+      {
+         cout<<name<<" "<<number<<endl;
+         isfound=true;
+      }
+   }
+
+   if(!isfound)
+      cout<<searchname<<" is not in this contact file."<<endl;
+      
+   return(0);
+}
+
+=======================================================
+//Create a new text file
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+   string str="This is a simple text. \nThis is line 1 \nand this is line 2.";
+
+   ofstream myfile("simple.txt");
+
+   myfile<<str;
+
+   return(0);
+}
+
+=======================================================
+//Read Only a text file
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+   fstream myfile("simple.txt", ios::in);
+
+
+   if(!myfile)
+   {
+      cout<<"Error in opening the file"<<endl;
+      exit(1);
+   }
+
+   string str;
+   while(getline(myfile, str))
+      cout<<str<<endl;
+
+   return(0);
+}
+=======================================================
+// Append to a text file
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+   ofstream file("simple.txt", ios::app);
+
+   string newStr = "I am new line\n";
+   file<<newStr;
+
+   cout<<"Text Appended."<<endl;
+
+   return(0);
+}
+=======================================================
+
